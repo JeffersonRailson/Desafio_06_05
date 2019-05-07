@@ -6,20 +6,19 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous"
 />
-<script>
-const teste = () => {
-    alert('115')
-};
-</script>
-
+<form action="./check" method = "post">
 <h2> Informe a idade </h2>
     <div class="form-group">
         <input
             class="form-control"
             id="exampleInputPassword1"
             placeholder="Idade"
-            method = "get"
+            name="idade"
         />
     </div>
-    <button type="submit" class="btn btn-primary"onclick="teste()">Enviar</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+
+
+
+
