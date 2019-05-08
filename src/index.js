@@ -1,6 +1,5 @@
 const express = require("express");
 const nunjucks = require("nunjucks");
-const bodyParser = require("body-parser");
 
 const app = express();
 
@@ -12,9 +11,9 @@ nunjucks.configure("view", {
 
 app.set("view engine", "njk");
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 const condicaoMiddleware = (req, res, next) => {
     const { idade } = req.query;
